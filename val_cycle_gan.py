@@ -141,10 +141,10 @@ def main():
     const_valB = np.asarray([valB.get_example(i) for i in range(25)])
 
     # [TODO] replace with your pass
-    serializers.load_hdf5(os.path.join("./runs/output/", "models", "{:03d}.disA.model".format(195)), disA)
-    serializers.load_hdf5(os.path.join("./runs/output/", "models", "{:03d}.disB.model".format(195)), disB)
-    serializers.load_hdf5(os.path.join("./runs/output/", "models", "{:03d}.genA.model".format(195)), genA)
-    serializers.load_hdf5(os.path.join("./runs/output/", "models", "{:03d}.genB.model".format(195)), genB)
+    serializers.load_hdf5(os.path.join("./output/", "models", "{:03d}.disA.model".format(195)), disA)
+    serializers.load_hdf5(os.path.join("./output/", "models", "{:03d}.disB.model".format(195)), disB)
+    serializers.load_hdf5(os.path.join("./output/", "models", "{:03d}.genA.model".format(195)), genA)
+    serializers.load_hdf5(os.path.join("./output/", "models", "{:03d}.genB.model".format(195)), genB)
 
     visualize(genA, genB, const_valA, const_valB, savedir=os.path.join(out_dir, 'visualize'))
 
