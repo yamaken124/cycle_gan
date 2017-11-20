@@ -7,6 +7,7 @@ import random
 
 
 class ImageDataset(chainer.dataset.DatasetMixin):
+    # [TODO] change your pass
     dataset_home = '/mnt/datasets/'
 
     def __init__(self, name, preprocess=1, augmentation=False, variable_size=False, image_size=256, final_size=128):
