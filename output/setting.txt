@@ -1,0 +1,14 @@
+batch_size = 5
+block_num = 5
+d_bn = True
+epoch = 200
+fake_label = 0.0
+g_bn = True
+gpu = 1
+lambda_ = 10
+lambda_dis_real = 0
+memory_size = 200
+out = output
+real_label = 0.9
+size = 128
+variable_size = False
